@@ -10,13 +10,14 @@ In this project, there is one Ipython notebook for data anylitics, you can open 
 
 Install the necessary libries for this project.
 
-`pip install pandas`
+`pip install jupyter`
 
-`pip install seaborn`
+`pip install -r requirements.txt`
 
-`pip install wordloud`
+## What are included
 
-`pip install nltk`
+Data for analysing and one Ipython notebook are included in this repository. You can download the whole project and run jupyter notebook for reviewing my analysing procedure. 
+
 
 ## Steps by steps
 
@@ -54,41 +55,5 @@ From above figure, we can find out the fact that most of the porperties aside in
 
 And from the average price figure, we can also conclude that the average price of property in Seattle is around 150 per night.
 
-Next, let’s check out the top 10 most profitable properties in town, and try to find out the reason for that.
-
-We can find out that the top 1 profitable property can earn around 188,763 annually.
-
-![](https://cdn-images-1.medium.com/max/1600/1*LBahKFOc-7_5juolRmt2vA.png)
-
-By merging it with reviews, I try to find out what’s the key features for their success.
-
-![](https://cdn-images-1.medium.com/max/1600/1*zI3vUc_Cphbb0lB1rXJBYw.png)
-
-Apparently the big house with amazing view would attract people to book for living.
-
-Next we will try to find out the fact and prove it by using data analytic model.
-
-Here we will use RandomForrest (RF)Model for that purpose. Since there are different categorical data in the dataset, Decision Tree modelling are very good at those data types and can easily split out the data for getting more inforamtion.
-
-First let’s try to predict the price by using the features in the listings.csv. After applying the RF Regression model on the dataset we find out the feature importances as following:
-
-![](https://cdn-images-1.medium.com/max/1600/1*qKDYhv9NThJikBET6RQgww.png)
-
-We can find out that the price of property is basically determined by the accommodation and size, the bigger the place is, the more higher the price is, the more accommodates it can provide, the higher the price it is.
-
-Next we will try to predict the revenue by using the same dataset features to find out the key facts. After applying the modelling on the dataset, we can find out that
-
-![](https://cdn-images-1.medium.com/max/1600/1*LSb-GUxC_G1aCgd9Dy0BFw.png)
-
-We can find out that location and reveiws contribute to the revenue. For deeper understanding, I also use correlation graph for detail understanding.
-
-![](https://cdn-images-1.medium.com/max/1600/1*d-WD0pRgRzYGCrygctDbQA.png)
-
-We can see that accommodates and bedrooms number take significant effect on the total revenue to the property, while reviews take negative effects on the total revenue that less reviews generate more revenue.
-
-In conclusion, there are three insights that generated from the Data itselfe.
-
-Average price of Airbnb property in Seattle is around 150, the maximum revenue during one year is around 188,000.
-It would have more advantages that you have bigger property that can provide more accommodates to guests in getting more profit.
-More reviews can’t really help you get more clients, but a nice view can.
+You can find more by running in my notebook.
 
